@@ -15925,7 +15925,7 @@ MonoBehaviour:
   levelType: 0
   spaceBetween2DDepthIndices: 1
   playerLives: 1
-  playerMaxLives: 1
+  playerMaxLives: 10
   timeToRespawnPlayer: 1
   playerSource: 0
   playerComp: {fileID: 3048094407788649701, guid: a84a485118064ab4ebf65324e81f3d21,
