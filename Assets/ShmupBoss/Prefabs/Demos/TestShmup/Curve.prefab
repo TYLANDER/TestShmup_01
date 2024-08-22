@@ -179,6 +179,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6100601773807269987}
   - component: {fileID: 7537403234923911406}
+  - component: {fileID: 5845585569615577669}
+  - component: {fileID: 5355409143552586382}
+  - component: {fileID: 6132317173387868984}
   m_Layer: 0
   m_Name: WeaponMunitionEnemy
   m_TagString: Untagged
@@ -213,24 +216,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fee608a67ea5864ba7d5b87b2080e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUsingNestedRotation: 1
+  isUsingNestedRotation: 0
   isUsingInputRotation: 0
   inputRotation: {fileID: 0}
   isUsingOverrideDirection: 0
   overrideDirection: {x: 0, y: 0}
   previewMunitionHierarchy: {fileID: 0}
   stage:
-    Rate: 3
+    Rate: 10
     MunitionPrefab: {fileID: 218150916915199121, guid: c163314b8d38f6f48897c325fea680f1,
       type: 3}
     MunitionScale: {x: 0.3, y: 0.4, z: 0.3}
     ScatterAngle: 0
-    BulletsNumber: 2
-    ArcAngleSpread: 45
+    BulletsNumber: 0
+    ArcAngleSpread: 0
     FiringSFX:
       ac: {fileID: 8300000, guid: 11b6cc65417867d438cf75b1c97c738e, type: 3}
       volume: 1
     FiringSfxCoolDownTime: 0
+--- !u!114 &5845585569615577669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003302318735613143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8632b65ab46387c428a3c6d0b53ecd6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeed: 100
+--- !u!114 &5355409143552586382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003302318735613143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f1991097957c5418a4399b59a27bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6132317173387868984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003302318735613143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6cabc668bb6b6e47a04022f297f84be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timedRates:
+  - duration: 1
+    rateMultplier: 0
+  - duration: 2
+    rateMultplier: 2
+  - duration: 1
+    rateMultplier: 0.5
+  isLooped: 0
 --- !u!1 &4611123594008100683
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,10 +572,10 @@ MonoBehaviour:
   isFollowingDirection: 1
   CurvePath:
     ControlPoints:
-    - {x: -2.8176575, y: 8.910767}
-    - {x: -8.074768, y: 1.2260742}
-    - {x: 4.1797485, y: -3.7478027}
-    - {x: 1.3807068, y: -8.102417}
+    - {x: 0.21246338, y: 9.693726}
+    - {x: -10.963715, y: 1.0594482}
+    - {x: 8.869446, y: -0.11279297}
+    - {x: 0.3965454, y: -9.555542}
     CurvePoints: []
   HandleSize: 0.5
 --- !u!114 &4005661811760657733
@@ -603,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16e9716e62461f41820207e380f4dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rollSpeed: 50
+  rollSpeed: 70
   limitAngle: 0
 --- !u!1 &6404887046133189466
 GameObject:
